@@ -1,0 +1,8 @@
+@if (post) {
+    <h1>{{post.title}}</h1>
+    <h6>Scritto da {{post.author}} in data {{ post.date | date : "dd/MM/yyyy" }} alle {{ post.date | date : "hh:mm" }} </h6>
+    <p>
+        {{post.body}}
+    </p>
+    <a class="btn btn-primary" routerLink="/posts">Torna indietro</a>
+}
